@@ -1,0 +1,46 @@
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+}
+.step {
+    text-align: center;
+    position: relative;
+    width: 25%;
+    z-index: 1;
+}
+.step .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: auto;
+}
+.step.active .icon,
+.step.completed .icon {
+    background-color: #28a745;
+    color: white;
+}
+.line {
+    position: absolute;
+    top: 50%;
+    left: 12.5%;
+    width: 100px;
+    height: 2px;
+    background-color:grey;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+.line.green {
+    background-color: #28a745;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
